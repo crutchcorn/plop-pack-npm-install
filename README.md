@@ -13,8 +13,6 @@ npm i plop-pack-npm-install
 ## Example
 
 ```javascript
-const {npmInstall} = require('plop-actions');
-
 module.exports = function(plop) {
   // Loads the npmInstall action type
   plop.load('plop-pack-npm-install');
