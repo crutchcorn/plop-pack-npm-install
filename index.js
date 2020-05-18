@@ -24,6 +24,6 @@ function npmInstall(_, config) {
 	});
 }
 
-module.exports = {
-	npmInstall
-}
+module.exports = function (plop) {
+	plop.setActionType('npmInstall', npmInstall);
+};

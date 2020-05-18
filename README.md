@@ -4,13 +4,20 @@
 
 Useful to have action for [PlopJS](https://github.com/plopjs/plop). This action runs `npm install` on the respective path passed to it.
 
+## Installation
+
+```
+npm i plop-pack-npm-install
+```
+
 ## Example
 
 ```javascript
 const {npmInstall} = require('plop-actions');
 
 module.exports = function(plop) {
-  plop.setActionType('npmInstall', gitInit);
+  // Loads the npmInstall action type
+  plop.load('plop-pack-npm-install');
 
   plop.setGenerator('generate', {
     prompts: [
