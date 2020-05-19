@@ -25,5 +25,6 @@ function npmInstall(_, config) {
 }
 
 module.exports = function (plop) {
+	plop.setDefaultInclude({ actionTypes: true });
 	plop.setActionType('npmInstall', npmInstall);
 };
